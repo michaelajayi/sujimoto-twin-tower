@@ -36,8 +36,8 @@ const HeroContent = () => {
       </div>
       {/* Nav Right Side */}
       <div className='flex'>
-        <div className='relative bg-blue-600'>
-          <h1 className='text-7xl text-center text-white font-800 font-koh-santepheap w-100 md:text-8xl lg:text-9xl lg:text-start md:w-full lg:w-3/4 bg-red-500'>
+        <div className='relative'>
+          <h1 className='text-7xl text-center text-white font-800 font-koh-santepheap w-100 md:text-8xl lg:text-9xl lg:text-start md:w-full lg:w-3/4'>
             Own the Best.
           </h1>
           <p className='relative md:w-1/3 text-white bottom-0 md:right-10 md:absolute font-inter text-sm mr-20'>
