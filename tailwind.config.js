@@ -18,6 +18,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "hero-bg": "url('assets/img/hero-bg.jpg')",
+        "lion-head-bg": "url('assets/img/lion-head.svg')",
       }),
       brightness: {
         25: ".25",
