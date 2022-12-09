@@ -6,7 +6,7 @@ const FeaturesSlider = ({ feature }) => {
   const swiperSlide = useSwiperSlide();
 
   return (
-    <div className='features-slide-container overflow-hidden h-[500px] relative'>
+    <div className='features-slide-container overflow-hidden h-[300px] md:h-[500px] relative'>
       {/* {swiperSlide.isActive && ( */}
       {/* <h2 className='absolute bottom-0 left-5 text-white text-3xl font-koh-santepheap'>
         {feature.title}
