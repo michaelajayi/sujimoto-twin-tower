@@ -25,7 +25,7 @@ const Features = () => {
       img: giantOfAfrica,
     },
     {
-      title: "Private Offices - STT means business",
+      title: "Private Offices",
       img: privateOffice,
     },
     {
@@ -33,11 +33,11 @@ const Features = () => {
       img: clubHouse,
     },
     {
-      title: "The Most sophisticated private Members ONLY Clubhouse",
+      title: "Private Members ONLY Clubhouse",
       img: dubaiClubHouse,
     },
     {
-      title: "Where Automation is Delivered at the Click of a Button",
+      title: "Home Automation",
       img: homeAutomation,
     },
     {
@@ -49,7 +49,7 @@ const Features = () => {
       img: skyPool,
     },
     {
-      title: "Best Culinary Experiences - 6 Celebrity Restaurants.",
+      title: "Best Culinary Experiences",
       img: culinaryExperience,
     },
   ];

@@ -92,3 +92,21 @@
   z-index: -1;
   /* border: 1px solid rgba(255, 255, 255, 0.44); */
 }
+
+.slider-figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
+  padding: 1rem 2rem;
+  /* line-height: 29px; */
+  /* border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 2rem;
+  transform: translate3d(-50%, 100%, 0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out; */
+}
+
+.slider-figcaption-active {
+  transform: translate3d(-50%, 0, 0);
+  opacity: 1;
+}
