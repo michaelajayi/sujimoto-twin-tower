@@ -24,10 +24,25 @@
 
 .long-section {
   height: 100%;
-  /* background-color: purple; */
+  background-color: rgba(13, 30, 55, 0.5);
 }
 
 .long-section::before {
+  content: "";
+  background: url("./assets/img/lion-head.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+/* .long-section::after {
   content: "";
   position: absolute;
   top: 0;
@@ -42,4 +57,38 @@
   background-blend-mode: multiply;
   transform: rotate(-180deg);
   z-index: -1;
+} */
+
+/* .long-section::after {
+  background: black;
+} */
+
+/* .left-statue {
+  top: 40rem;
+  left: 25rem;
+} */
+
+/* .features-slide-container > img {
+  transition: transform 0.5s ease;
+} */
+
+.sticky-button {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.29);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.44);
+}
+
+.glass-effect {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.29);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  z-index: -1;
+  /* border: 1px solid rgba(255, 255, 255, 0.44); */
 }

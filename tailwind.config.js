@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         "koh-santepheap": ["Koh Santepheap", "cursive"],
         inter: ["Inter", "sans-serif"],
+        "luxurious-script": ["Luxurious Script", "cursive"],
       },
       backgroundImage: (theme) => ({
         "hero-bg": "url('assets/img/hero-bg.jpg')",

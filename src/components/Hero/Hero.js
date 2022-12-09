@@ -7,7 +7,7 @@ import bgImage from "../../assets/img/hero-bg.svg";
 
 const Hero = () => {
   return (
-    <sections
+    <section
       className='flex flex-col w-screen h-screen bg-center object-cover before:absolute before:bg-[#B5B5B5] justify-between items-center py-3 filter relative'
       id='hero-bg'
     >
@@ -19,7 +19,7 @@ const Hero = () => {
       <Nav />
       <HeroContent />
       <HeroBottomSlider />
-    </sections>
+    </section>
   );
 };
 
