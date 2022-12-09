@@ -58,7 +58,7 @@ const HeroContent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-effect absolute top-0 right-[25%] w-[15%] h-screen'></div>
+      <div className='hidden glass-effect absolute top-0 right-[25%] w-[15%] h-screen md:block'></div>
     </section>
   );
 };
