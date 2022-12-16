@@ -6,18 +6,12 @@ const FeaturesSlider = ({ feature }) => {
   const swiperSlide = useSwiperSlide();
 
   return (
-    <div className='features-slide-container overflow-hidden h-[300px] md:h-[500px] relative'>
-      {/* {swiperSlide.isActive && ( */}
-      {/* <h2 className='absolute bottom-0 left-5 text-white text-3xl font-koh-santepheap'>
-        {feature.title}
-      </h2> */}
-      {/* )} */}
+    <div className='features-slide-container overflow-hidden h-[300px] md:h-[500px] relative '>
       <figure className='h-full'>
         <img
           src={feature.img}
           alt='features-img'
-          className='h-full w-full object-cover'
-          // className='h-full w-full object-cover hover:scale-[1.1] ease-in duration-[0.5s]'
+          className='h-full w-full object-cover hover:scale-[1.1] ease-in duration-[0.5s]'
         />
         {swiperSlide.isActive && (
           <figcaption className='slider-figcaption'>
@@ -27,6 +21,11 @@ const FeaturesSlider = ({ feature }) => {
           </figcaption>
         )}
       </figure>
+      <div className='bg-red-500 z-40 h-full w-full absolute'>
+        <p className='text-white font-koh-santepheap leading-[2rem]'>
+          {feature.desc}
+        </p>
+      </div>
     </div>
   );
 };

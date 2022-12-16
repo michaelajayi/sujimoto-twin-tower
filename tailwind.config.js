@@ -8,6 +8,11 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    fontWeight: {
+      extrabold: 800,
+      "extra-bold": 800,
+      black: 900,
+    },
     extend: {
       colors: {
         themeOrange: "#FF7A00",

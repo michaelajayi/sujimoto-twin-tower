@@ -2,7 +2,7 @@ import React from "react";
 
 const WhySTT = () => {
   return (
-    <div className='w-screen h-auto items-center flex flex-col py-2 px-4 space-y-10 lg:items-end lg:py-4 lg:px-32'>
+    <div className='w-screen h-auto items-center flex flex-col py-2 px-4 space-y-10 lg:items-end lg:pt-40 lg:pb-10 lg:px-32'>
       <div className='flex flex-col items-end justify-between space-y-5 lg:space-y-6'>
         <div className='w-full h-[2px] bg-white lg:w-[75%] lg:h-[1px]'></div>
         <h1 className='font-koh-santepheap text-center text-7xl text-white lg:text-[7rem] lg:text-start'>

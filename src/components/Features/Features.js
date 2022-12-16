@@ -23,34 +23,42 @@ const Features = () => {
     {
       title: "The Giant of Africa",
       img: giantOfAfrica,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Private Offices",
       img: privateOffice,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Club House",
       img: clubHouse,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Private Members ONLY Clubhouse",
       img: dubaiClubHouse,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Home Automation",
       img: homeAutomation,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "40 Global Retail Brands",
       img: luxuryGlobalBrands,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Swimming Pool",
       img: skyPool,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
     {
       title: "Best Culinary Experiences",
       img: culinaryExperience,
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nibh maximus, feugiat lectus aliquet, pellentesque tortor. Maecenas condimentum quis nibh vel tincidunt. Phasellus ut tellus dignissim, pellentesque leo non, pulvinar tellus. Ut vitae rutrum sem, a mollis erat. Phasellus a velit tincidunt.",
     },
   ];
   return (
