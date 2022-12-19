@@ -14,7 +14,7 @@ const Hero = () => {
       <img
         src={bgImage}
         alt=''
-        className='h-screen w-screen absolute top-0 left-0 -z-10 object-cover brightness-70 md:brightness-60 lg:brightness-[80%]'
+        className='h-screen w-screen absolute top-0 left-0 -z-10 object-cover brightness-70 md:brightness-60 lg:brightness-[65%]'
       />
       <Nav />
       <HeroContent />

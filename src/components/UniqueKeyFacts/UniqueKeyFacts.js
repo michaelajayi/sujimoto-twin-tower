@@ -1,25 +1,29 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { scrollToEl } from "../../features/layout/layoutSlice";
 
 import pulser from "../../assets/img/pulser.svg";
 
 const UniqueKeyFacts = () => {
+  const dispatch = useDispatch();
+
   const uniqueFacts = [
     {
-      title: "1st of its kind One of a Kind",
+      title: "1st of its kind, 3-in-1",
       leading:
-        "STT is a one-stop-shop for all. A unique destination that captures a perfect blend of",
+        "STT Provides an unprecedented hyper-Luxury living experience. Nigeria’s first-of-its-kind 3-in-1 edifice that represents living canvases of residences, hotel apartments, and Luxury retail in one unique space.",
       more: "hyper-luxury living and best hotel experience while bringing the world to the doorstep of its guests. At STT, the everyday need of the guest and residences will be accessed within a 2 minutes’ walk. Live. Work and Play",
     },
     {
-      title: "One-Stop-Shop 2 Minutes to Everything",
+      title: "One-Stop-Shop",
       leading:
-        "STT is set to become Nigeria’s Largest Luxury Retail & Entertainment Destination.",
+        "STT is a one-stop-shop for all. A unique destination that captures a perfect blend of hyper-luxury living and the best hotel experience while bringing the world to the doorstep of its guests. At STT, the everyday need of the guest and residents will be accessed within a 2 minutes walk. - Live. Work and Play.",
       more: "A residential and hotel space pulsating with world leading brands including six celebrity restaurants within it.",
     },
     {
       title: "40+ Global Retail Brands",
       leading:
-        "STT is set to become Nigeria’s Largest Luxury Retail & Entertainment Destination.",
+        "STT is set to become Nigeria’s Largest Luxury Retail & Entertainment Destination. A residential and hotel space pulsating with world-leading brands including six celebrity restaurants within it.",
       more: "A residential and hotel space pulsating with world leading brands including six celebrity restaurants within it.",
     },
   ];
@@ -29,8 +33,8 @@ const UniqueKeyFacts = () => {
         <div className='flex items-start space-x-4 first '>
           <img src={pulser} alt='pulser' />
           <div className='flex flex-col'>
-            <h4 className='font-koh-santepheap text-white text-2xl font-bold w-[35%]'>
-              1st of its kind One of a Kind
+            <h4 className='font-koh-santepheap text-white text-2xl font-bold w-[40%]'>
+              1st of its kind, 3-in-1
             </h4>
             <p className='text-white text sm font-koh-santepheap w-[50%]'>
               STT is a one-stop-shop for all. A unique destination that captures
@@ -86,7 +90,10 @@ const UniqueKeyFacts = () => {
               </a>
             </div>
           </div>
-          <button className='uppercase text-white px-12 py-2 text-1xl font-inter bg-transparent border border-white  bottom-0 right-[15%] ml-[5rem]'>
+          <button
+            className='uppercase text-white px-12 py-2 text-1xl font-inter bg-transparent border border-white  bottom-0 right-[15%] ml-[5rem]'
+            onClick={() => dispatch(scrollToEl())}
+          >
             Book Now
           </button>
         </div>

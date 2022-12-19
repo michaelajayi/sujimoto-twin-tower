@@ -10,7 +10,7 @@ import Entrance from "./components/Entrance/Entrance";
 
 import gsap from "gsap";
 
-function App() {
+function App({ elRef }) {
   const home = gsap.timeline();
   const homeRef = useRef(null);
 
@@ -26,8 +26,8 @@ function App() {
   return (
     // <Entrance tl={home}>
     <div ref={homeRef}>
+      <StickyButton elRef={elRef} />
       <Hero />
-      {/* <StickyButton /> */}
       <LongSection />
       <Footer />
     </div>

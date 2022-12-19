@@ -217,32 +217,32 @@
   /* transform: translateX(60%); */
 }
 
-/* .reserve-right-img {
-  transition: 1s all;
-} */
-
-.reserve-left-img,
-.reserve-right-img {
-  transition: all 0.5s linear;
+.ul-before {
+  opacity: 0;
+  transform: translateY(5%);
+  transition: 0.5s all ease-in;
 }
 
-/* .reserve-left-img:hover {
-  transform: translateX(60%);
-} */
+.reserve-right-img {
+  transform: translateX(-9rem);
+  transition: 0.5s all ease-in;
+}
 
-/* @keyframes slideLeftImg {
-  0% {
-    transform: translateX(9rem);
-  }
-  100% {
-    transform: translateX(60%);
-  }
-} */
+.reserve-left-img {
+  transform: translateX(9rem);
+  transition: 0.5s all ease-in;
+}
 
 .pulser {
   aspect-ratio: 1;
   border-radius: 50%;
   animation: pulse 2s infinite;
+}
+
+.pulser-circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: pulseWhite 2s infinite;
 }
 
 @keyframes pulse {
@@ -253,4 +253,67 @@
   75% {
     box-shadow: #ff7a0000 0 0 0 16px;
   }
+}
+
+@keyframes pulseWhite {
+  0% {
+    box-shadow: #ffffff 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #ffffff00 0 0 0 16px;
+  }
+}
+
+.hovered-feature {
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.75s ease-in-out;
+}
+
+.hovered-parent {
+  position: relative;
+  z-index: 10;
+}
+
+.hovered-parent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #192847 5.26%, rgba(217, 217, 217, 0) 18%);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.hovered-parent:hover + .hovered-feature {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.more-content-container {
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-custom-nav {
+  z-index: 50;
+}
+
+.swiper-custom-nav > * {
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-custom-nav > *:hover {
+  opacity: 1;
+}
+
+.bg-img-overlay {
+  z-index: 10;
 }

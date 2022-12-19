@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { FiFacebook, FiLinkedin, FiYoutube } from "react-icons/fi";
+
 import logoWhite from "../../assets/img/logo-white.png";
 
 const Nav = () => {
@@ -16,17 +18,32 @@ const Nav = () => {
         <span className='text-themeOrange'>Nigeria’s</span> 1st{" "}
         <span className='text-themeOrange'>of its kind,</span> 3-
         <span className='text-themeOrange'>in</span>
-        -1 Luxury Building.
+        -1 Building.
       </h1>
-      <div className='flex space-x-3'>
-        <a className='text-white' href='#!'>
-          Fb.
+      <div className='flex space-x-5 items-center justify-between'>
+        <a
+          className='text-white'
+          href='https://www.facebook.com/motoconstructionng'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FiFacebook color='#fff' size={18} />
         </a>
-        <a className='text-white' href='#!'>
-          In.
+        <a
+          className='text-white'
+          href='https://www.linkedin.com/company/sujimoto-construction-limited'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FiLinkedin color='#fff' size={18} />
         </a>
-        <a className='text-white' href='#!'>
-          Yt.
+        <a
+          className='text-white'
+          href='https://www.youtube.com/channel/UC1Q3PEh495SxXY-npjegTkg'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FiYoutube color='#fff' size={18} />
         </a>
       </div>
     </nav>

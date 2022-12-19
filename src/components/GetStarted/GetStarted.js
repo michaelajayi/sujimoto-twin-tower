@@ -1,14 +1,22 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import getStartedImg from "../../assets/img/get-started-img.png";
-import StickyButton from "../StickyButton/StickyButton";
+
+import { useDispatch } from "react-redux";
+import { setElRef } from "../../features/layout/layoutSlice";
 
 const GetStarted = () => {
   const elRef = useRef();
-  
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setElRef(elRef));
+  }, [dispatch]);
+
   return (
     <>
       <div
         className='container bg-[#232323] h-auto flex flex-col lg:flex-row'
+        id='get-started'
         ref={elRef}
       >
         <div className='flex flex-col space-y-5 px-10 py-10 md:py-8 w-full lg:w-[65%]'>
@@ -120,7 +128,6 @@ const GetStarted = () => {
           />
         </div>
       </div>
-      <StickyButton elRef={elRef} />
     </>
   );
 };

@@ -1,31 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useSwiperSlide } from "swiper/react";
 
 const FeaturesSlider = ({ feature }) => {
   const swiperSlide = useSwiperSlide();
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className='features-slide-container overflow-hidden h-[300px] md:h-[500px] relative '>
-      <figure className='h-full'>
+    <div className='w-full'>
+      <div className='h-[600px] md:h-[500px] relative hovered-parent'>
         <img
           src={feature.img}
-          alt='features-img'
-          className='h-full w-full object-cover hover:scale-[1.1] ease-in duration-[0.5s]'
+          alt='feature-img'
+          className='h-full w-full object-cover'
         />
-        {swiperSlide.isActive && (
-          <figcaption className='slider-figcaption'>
-            <p className='font-koh-santepheap text-white text-3xl'>
-              {feature.title}
-            </p>
-          </figcaption>
+        <p className='font-koh-santepheap text-white text-3xl absolute bottom-0 left-0 px-5 py-2 feature-title z-10'>
+          {feature.title}
+        </p>
+      </div>
+      {/* {swiperSlide.isActive && ( */}
+
+      <div className='hovered-feature bg-black px-5 py-5 space-y-5 flex flex-col'>
+        {feature.sub && (
+          <p className='text-white text-[1.3rem] font-koh-santepheap font-bold'>
+            {feature.sub && feature.sub}
+          </p>
         )}
-      </figure>
-      <div className='bg-red-500 z-40 h-full w-full absolute'>
-        <p className='text-white font-koh-santepheap leading-[2rem]'>
+        <p
+          className={`text-white font-koh-santepheap leading-[2rem]
+          }`}
+        >
           {feature.desc}
         </p>
       </div>
+      {/* )} */}
     </div>
   );
 };
