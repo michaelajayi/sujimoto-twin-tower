@@ -33,7 +33,7 @@ const WhySTT = () => {
           >
             Read more
           </a>
-          <div className='read-more-content'>
+          <div className=' read-more-content hidden'>
             This is the ultimate address where luxury Residences, iconic
             hospitality, and exceptional retail services converge as one.
           </div>

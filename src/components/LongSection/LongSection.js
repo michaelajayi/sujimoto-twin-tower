@@ -40,7 +40,7 @@ const LongSection = () => {
       <ReserveAUnit />
       <GetStarted />
       {/* Map Outline Section */}
-      {/* <div id='map-outline' className='bg-red-600'>
+      {/* <div id='map-outline'>
         <img src={mapOutline} alt='map-outline' />
       </div> */}
     </section>

@@ -7,14 +7,16 @@ import logoWhite from "../../assets/img/logo-white.png";
 
 const Nav = () => {
   return (
-    <nav className='relative container flex justify-between items-center mx-auto px-10 py-5'>
-      <Link to='/' className='flex flex-col items-center'>
-        <img src={logoWhite} alt='logo-whites' className='scale-[.8]' />
-        <p className='text-xs text-white font-koh-santepheap'>
+    <nav className='relative w-full lg:w-[90%] flex justify-between items-center mx-auto px-3 md:px-10 py-5'>
+      <img
+        src={logoWhite}
+        alt='logo-whites'
+        className='scale-[.6] md:scale-[.7] -ml-[10px] md:ml-0'
+      />
+      {/* <p className='text-[.6rem] text-white font-koh-santepheap'>
           Sujimoto Twin Tower
-        </p>
-      </Link>
-      <h1 className='text-1xl md:text-sm lg-text-1xl font-koh-santepheap text-white text-center lg:text-start'>
+        </p> */}
+      <h1 className='hidden text-1xl md:text-sm lg-text-1xl font-koh-santepheap text-white text-center lg:text-start md:block'>
         <span className='text-themeOrange'>Nigeria’s</span> 1st{" "}
         <span className='text-themeOrange'>of its kind,</span> 3-
         <span className='text-themeOrange'>in</span>
